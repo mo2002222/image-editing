@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  width: 90vw;
+  background: #222;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  border-radius: 10px;
+}
+.container .image .img-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.container .image img, .container .image canvas {
+  max-width: 45vw;
+  max-height: 60vh;
+}
+.container .image .upload {
+  text-align: center;
+  text-align: center;
+  transform: translateY(50px);
+}
+.container .image .upload input {
+  display: none;
+}
+.container .image .upload label {
+  padding: 10px 20px;
+  border: 2px dashed #fff;
+  cursor: pointer;
+}
+.container .filters ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  direction: rtl;
+}
+.container .filters ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  direction: ltr;
+}
+.container .filters ul li:last-child {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .filters ul li:last-child a, .container .filters ul li:last-child span {
+  background: #060;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .container .image .img-box canvas {
+    width: 85%;
+    max-width: 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */
