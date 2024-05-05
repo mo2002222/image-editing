@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image editor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="img-box">
+                <img id="img" >
+                <canvas id="canvas"></canvas>
+                <div class="upload">
+                    <label for="upload">Upload</label>
+                    <input type="file" id="upload">
+                </div>
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" value="100" min="0" max="200" >
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" value="100" min="0" max="200" >
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" value="100" min="0" max="200" >
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" value="0" min="0" max="200" >
+                </li>
+                <li>
+                    <label for="grayscale">GrayScale</label>
+                    <input type="range" id="grayscale" value="0" min="0" max="1" step="0.1" >
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" value="0" min="0" max="10" step="0.1" >
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range" id="hue-rotate" value="0" min="0" max="350"  >
+                </li>
+                <li>
+                    <label for="invert">Invert</label>
+                    <input type="range" id="invert" value="0" min="0" max="100"  >
+                </li>
+                <li>
+                    <label for="opacity">Opacity</label>
+                    <input type="range" id="opacity" value="100" min="0" max="100"  >
+                </li>
+                <li>
+                    <span id="reset" onclick="resetValu()">Reset</span>
+                    <a download="image" id="download" >Download</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
