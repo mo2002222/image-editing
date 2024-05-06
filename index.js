@@ -26,6 +26,7 @@ function resetValu() {
     grayscale.value= '0'
     blur.value= '0'
     rotate.value= '0'
+    opacity.value = '100'
 }
 
 
