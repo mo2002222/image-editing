@@ -28,7 +28,7 @@ function resetValu() {
     blur.value= '0'
     rotate.value= '0'
     opacity.value = '100'
-    mainimg
+    ctx.drawImage(img,0,0,canvas.width,canvas.height);
 }
 
 
@@ -53,7 +53,6 @@ uploadbtn.onchange = function () {
         canvas.width = img.width;
         canvas.height = img.height;
         ctx.drawImage(img,0,0,canvas.width,canvas.height);
-        mainimg = ctx.drawImage(img,0,0,canvas.width,canvas.height);
         img.style.display='none';
     }
 };
