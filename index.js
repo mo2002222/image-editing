@@ -16,6 +16,7 @@ let uploadbtn = document.getElementById('upload');
 let img = document.getElementById('img');
 let imgBox = document.querySelector('.img-box');
 let newimg  ;
+let mainimg;
 //
 function resetValu() {
     img.style.filter = 'none';
@@ -27,7 +28,7 @@ function resetValu() {
     blur.value= '0'
     rotate.value= '0'
     opacity.value = '100'
-    ctx.drawImage(img,0,0,canvas.width,canvas.height);
+    mainimg
 }
 
 
@@ -52,6 +53,7 @@ uploadbtn.onchange = function () {
         canvas.width = img.width;
         canvas.height = img.height;
         ctx.drawImage(img,0,0,canvas.width,canvas.height);
+        mainimg = ctx.drawImage(img,0,0,canvas.width,canvas.height);
         img.style.display='none';
     }
 };
