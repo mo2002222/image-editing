@@ -27,6 +27,7 @@ function resetValu() {
     blur.value= '0'
     rotate.value= '0'
     opacity.value = '100'
+    ctx.drawImage(img,0,0,canvas.width,canvas.height);
 }
 
 
