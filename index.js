@@ -19,7 +19,7 @@ let newimg  ;
 let mainimg;
 //
 function resetValu() {
-    img.style.filter = 'none';
+    ctx.filter = 'none';
     saturate.value = '100'
     contrast.value= '100'
     brightness.value= '100'
